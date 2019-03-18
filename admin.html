@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>
+ADMIN LOGIN
+</title>
+</head>
+<body>
+<center>
+<img src="web.jpg"  alt="image not displayed"><br><br><br>
+</center>
+<script language="javascript">
+function check(form)
+{
+if(form.id.value=="admin" && form.pass.value=="web")
+{
+window.open('test.php')
+}
+else
+{
+alert("Error password or username")
+}
+}
+</script>
+<form name="Login">
+<center>
+<table bgcolor="white" cellpadding="12" border="1">
+<tr><td colspan="2"><center><h1><i>
+<b>LOGIN 
+AREA</b></i></h1></center></td></tr>
+<tr><td><h1><i><b>UserID:</b></i></h1>
+</td><td><form name="Login"><input name="id" type="text"></td></tr>
+<tr><td><h1><i>Password:</b></i></h1>
+</td><td><input name="pass" type="password"></td></tr>
+<tr><td><center><input type="button" value="Login" onclick="check(this.form)"></center>
+</td>
+<td><center ><br><input type="Reset"></form></td></tr></table>
+</center>
+</body>
+</html>
+
